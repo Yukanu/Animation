@@ -1,0 +1,66 @@
+/**
+ * file: style.css
+ * purpose: effects ...
+ **/
+
+@keyframes baggrund {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes hello {
+    from {
+        background-color: aliceblue;
+        font-weight: 100;
+    }
+    to {
+        background-color: antiquewhite;
+        font-weight: 200;
+    }
+}
+
+@keyframes billede {
+    100% {
+        transform: translate(1000px);
+    }
+}
+
+body {
+    animation-name: baggrund;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+article {
+    width: 26rem;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 2rem;
+    font-weight: italic;
+    background-color: aliceblue;
+    animation-name: hello;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+img {
+    animation-name: billede;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
